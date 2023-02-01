@@ -4,4 +4,4 @@
 
 Hallo
 
-Good morning
+Bye

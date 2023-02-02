@@ -50,7 +50,7 @@ const Help = () => {
       ) : (
         <div>
           <p className='button-help'>Empecemos</p>
-          <p className='button-help'>Enviar dinero</p>
+          <p className='button-help'>Enviar dinero!</p>
         </div>
       )}
     </>

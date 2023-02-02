@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -24,14 +24,14 @@
   to {
     transform: rotate(360deg);
   }
-}
+}nav c
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
-
+nav c
 .card {
   padding: 2em;
 }
@@ -40,20 +40,10 @@
   color: #888;
 }
 
-
 /* NAVIGATION */
-header {
+/* header {
   display: flex;
-  justify-content: space-around;
-}
-
-.test {
-  color: red;
-  margin: 0 20px;
-}
-
-/* HELP */
-.toggleButton {
+  justify-content: space-aroun.toggleButton {
   background-color: #4caf50;
   color: white;
   padding: 15px 32px;
@@ -61,5 +51,21 @@ header {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-}
+} */
+/* }  */
 
+/* .test {
+  color: red;
+  margin: 0 20px;
+} */
+
+/* HELP */
+/* .toggleButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+} */

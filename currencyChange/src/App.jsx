@@ -1,4 +1,4 @@
-
+import './scss/App.scss';
 import './App.css';
 
 import { Routes, Route } from 'react-router-dom';
@@ -11,12 +11,10 @@ import Help from './components/Help';
 import Contact from './components/Contact';
 import LoginForm from './components/LoginForm';
 import NotFound from './components/NotFound';
-
-
+import Footer from './components/Footer';
 
 function App() {
   return (
-
     <div>
       <Routes>
         <Route path='/' element={<Layout />}>
@@ -25,10 +23,10 @@ function App() {
           <Route path='help' element={<Help />} />
           <Route path='contact' element={<Contact />} />
           <Route path='loginForm' element={<LoginForm />} />
+          <Route path='footer' element={<Footer />} />
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
-
     </div>
   );
 }

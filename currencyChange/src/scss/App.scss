@@ -1,0 +1,12 @@
+@use "./partials/variables" as *;
+@use "./partials/Header";
+@use "./partials/ConvertForm";
+@use "./partials/Help";
+@use "./partials/News";
+
+// * {
+//     margin: 0;padding: 0;box-sizing: border-box;
+// }
+* {
+    font-family: sans-serif;
+}

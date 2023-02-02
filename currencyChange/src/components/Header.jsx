@@ -4,21 +4,23 @@ const Header = () => {
   return (
     <header>
       <div className='title-logo'>
-        <Link to='/'>DCI Converter</Link>
+        <Link className='title-logo' to='/'>
+          DCI Converter
+        </Link>
         {/* <span>logo</span> */}
       </div>
       <nav className='nav'>
         {/* <NavLink to='/'>DCI Converter</NavLink> */}
-        <NavLink className='test' to='news'>
+        <NavLink className='navlink' to='news'>
           News
         </NavLink>
-        <NavLink className='test' to='help'>
+        <NavLink className='navlink' to='help'>
           Help
         </NavLink>
-        <NavLink className='test' to='contact'>
+        <NavLink className='navlink' to='contact'>
           Contact
         </NavLink>
-        <NavLink className='test' to='loginForm'>
+        <NavLink className='navlink' to='loginForm'>
           Login
         </NavLink>
       </nav>

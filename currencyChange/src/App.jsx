@@ -11,12 +11,12 @@ import Help from './components/Help';
 import Contact from './components/Contact';
 import LoginForm from './components/LoginForm';
 import NotFound from './components/NotFound';
-
+import ContextContainer from './context/ContextContainer';
 
 
 function App() {
   return (
-
+    <ContextContainer>
     <div>
       <Routes>
         <Route path='/' element={<Layout />}>
@@ -30,6 +30,7 @@ function App() {
       </Routes>
 
     </div>
+    </ContextContainer>
   );
 }
 

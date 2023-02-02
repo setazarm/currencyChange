@@ -11,23 +11,26 @@ import Help from './components/Help';
 import Contact from './components/Contact';
 import LoginForm from './components/LoginForm';
 import NotFound from './components/NotFound';
+import ContextContainer from './context/ContextContainer';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<ConvertForm />} />
-          <Route path='news' element={<News />} />
-          <Route path='help' element={<Help />} />
-          <Route path='contact' element={<Contact />} />
-          <Route path='loginForm' element={<LoginForm />} />
-          <Route path='footer' element={<Footer />} />
-          <Route path='*' element={<NotFound />} />
-        </Route>
-      </Routes>
-    </div>
+    <ContextContainer>
+      <div>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<ConvertForm />} />
+            <Route path='news' element={<News />} />
+            <Route path='help' element={<Help />} />
+            <Route path='contact' element={<Contact />} />
+            <Route path='loginForm' element={<LoginForm />} />
+            <Route path='footer' element={<Footer />} />
+            <Route path='*' element={<NotFound />} />
+          </Route>
+        </Routes>
+      </div>
+    </ContextContainer>
   );
 }
 

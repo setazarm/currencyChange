@@ -12,8 +12,11 @@ import Contact from './components/Contact';
 import LoginForm from './components/LoginForm';
 import NotFound from './components/NotFound';
 
+
+
 function App() {
   return (
+
     <div>
       <Routes>
         <Route path='/' element={<Layout />}>

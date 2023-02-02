@@ -40,6 +40,7 @@
   color: #888;
 }
 
+
 /* NAVIGATION */
 header {
   display: flex;
@@ -61,3 +62,4 @@ header {
   font-size: 16px;
   cursor: pointer;
 }
+

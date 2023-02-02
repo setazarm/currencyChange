@@ -1,25 +1,20 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
-    <div>
-      <ul>
-        <li>Site Map</li>
-        <li>About us</li>
-        <li>Partnerships</li>
-        <li>Help Center</li>
-        <li>Privacy</li>
-        <li>Cookie Policy</li>
-        <li>
-          <span>Facebook</span>
-        </li>
-        <li>
-          <span>Twitter</span>
-        </li>
-        <li>
-          <span>Instagram</span>
-        </li>
-      </ul>
-      <p>©2023 Arber/Mohammed/Ricardo/Setare</p>
-    </div>
+    <footer>
+      <Link className='title-footer' to='/'>
+        DCI Converter
+      </Link>
+      <div>
+        <a href='https://github.com/'>
+          <i class='fa-brands fa-square-github'></i>
+        </a>
+        <a href='https://linkedin.com/'>
+          <i class='fa-brands fa-linkedin'></i>
+        </a>
+      </div>
+    </footer>
   );
 };
 export default Footer;

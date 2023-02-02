@@ -33,7 +33,7 @@ const convertForm = () => {
   return (
     <>
       {username && <p>Welcome {username}</p>}
-      <div>
+      <div className='converter-container'>
         <h1>Currency Exchange</h1>
         <form>
           <label htmlFor=''>Amount</label>

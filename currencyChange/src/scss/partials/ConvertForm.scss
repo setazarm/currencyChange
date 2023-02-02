@@ -7,27 +7,24 @@
     background-color: $bgBlue;
     color: $textGray;
     border-radius: 15px;
-    // margin-top: 4em;
-    width: 80%;
+    width: 50%;
+    max-width: 900px;
     margin: 4em auto;
     padding: 2.5em;
 
     form {
         display: flex;
         gap: 1em;
-        @media screen and (max-width: 870px) {
+        @media screen and (max-width: 1292px) {
             flex-direction: column;
         }
         select {
-            // width: 150px;
             min-width: 150px;
         }
     }
+
     p {
         font-size: 1.5em;
     }
 
-    label {
-
-    }
 }

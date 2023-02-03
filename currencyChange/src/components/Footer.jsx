@@ -8,10 +8,10 @@ const Footer = () => {
       </Link>
       <div>
         <a href='https://github.com/'>
-          <i class='fa-brands fa-square-github'></i>
+          <i className='fa-brands fa-square-github'></i>
         </a>
         <a href='https://linkedin.com/'>
-          <i class='fa-brands fa-linkedin'></i>
+          <i className='fa-brands fa-linkedin'></i>
         </a>
       </div>
     </footer>

@@ -32,7 +32,11 @@ const convertForm = () => {
 
   return (
     <>
-      {username && <p>Welcome {username}</p>}
+      {username && (
+        <p className='welcome-message'>
+          <i className='fa-solid fa-user'></i> Welcome {username}
+        </p>
+      )}
       <div className='converter-container'>
         <h1>Currency Exchange</h1>
         <form>

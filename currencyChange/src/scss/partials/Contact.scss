@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 160px auto 0 auto;
+    padding: 1.8em;
+    border: 1px solid $bgBlue;
+    border-radius: 8px;
+    width: fit-content;
+}

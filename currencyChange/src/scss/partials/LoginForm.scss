@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+.forget-container {
+    text-align: center;
+    .submit-botton {
+        padding: 8px 20px;
+        border-radius: 5px;
+    }
+}

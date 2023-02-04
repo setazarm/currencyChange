@@ -54,6 +54,8 @@ const Contact = () => {
         />
         <br />
         <textarea
+          cols={30}
+          rows={3}
           placeholder='Write your text here...'
           name='message'
           value={formData.message}

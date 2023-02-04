@@ -26,9 +26,10 @@ function LoginForm() {
         <>
           <h2>Log in</h2>
           <form onSubmit={handleLoginSubmit}>
-            <label htmlFor='username'>Username:</label>
+            {/* <label htmlFor='username'>Username:</label> */}
             <br />
             <input
+              placeholder='Username'
               type='text'
               id='username'
               name='username'
@@ -37,9 +38,10 @@ function LoginForm() {
             />
             <br />
             <br />
-            <label htmlFor='password'>Password:</label>
+            {/* <label htmlFor='password'>Password:</label> */}
             <br />
             <input
+              placeholder='Password'
               type='password'
               id='password'
               name='password'
@@ -67,7 +69,7 @@ function LoginForm() {
             <br />
             <br />
             <input
-              className='submit-botton'
+              className='submit-button'
               type='submit'
               value='Submit Request'
             />

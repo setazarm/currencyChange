@@ -1,0 +1,45 @@
+@use "./variables" as *;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 85%;
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: 20px;
+        text-align: center;
+        font-family: arial;
+        flex-basis: calc(33.33% - 20px);
+        padding: 10px;
+        color: $textDarkGrey;
+        min-height: 350px;
+        img {
+            width: 80%;
+            object-fit: cover;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            margin: 0;
+            padding: 10px 0;
+            text-align: left;
+        }
+        a {
+            color: $bgBlue;
+            font-size: 14px;
+        }
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    }
+  }

@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
+
+  const [feedback, setFeedback] = useState('');
 
   const handleInputChange = (event) => {
     setFormData({
@@ -17,42 +19,53 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(formData);
-    // Add logic for submitting form data to server
+    if (
+      formData.name !== '' &&
+      formData.email !== '' &&
+      formData.message !== ''
+    ) {
+      setFeedback(
+        `Your message has been successfully sent. Thank you for your feedback ${formData.name}!`
+      );
+    } else {
+      setFeedback('Please fill all the fields.');
+    }
+    setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
+    <>
+      <form className='contact-container' onSubmit={handleSubmit}>
         <input
-          type="text"
-          name="name"
+          placeholder='Name'
+          type='text'
+          name='name'
           value={formData.name}
           onChange={handleInputChange}
         />
-      </label>
-      <br />
-      <label>
-        Email:
+        <br />
         <input
-          type="email"
-          name="email"
+          placeholder='email'
+          className='test-input'
+          type='email'
+          name='email'
           value={formData.email}
           onChange={handleInputChange}
         />
-      </label>
-      <br />
-      <label>
-        Message:
+        <br />
         <textarea
-          name="message"
+          cols={30}
+          rows={3}
+          placeholder='Write your text here...'
+          name='message'
           value={formData.message}
           onChange={handleInputChange}
         />
-      </label>
-      <br />
-      <button type="submit">Submit</button>
-    </form>
+        <br />
+        <button type='submit'>Submit</button>
+      </form>
+      {feedback && <h2>{feedback}</h2>}
+    </>
   );
 };
 

@@ -32,5 +32,28 @@
     p {
         font-size: 1.5em;
     }
+}
 
+.paragraph-converter {
+    display: flex;
+    color: $bgBlue;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 280px;
+    line-height: 1.5em;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: $textDarkGrey;
+    font-weight: bold;
+    text-align: justify;
+    h4 {
+        font-size: 1.3em;
+    }
 }

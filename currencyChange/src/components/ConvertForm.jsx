@@ -77,6 +77,31 @@ const convertForm = () => {
           {amount} {baseCurrency} = {result} {targetCurrency}
         </p>
       </div>
+
+      <h3 className='paragraph-converter'>
+        We give you the power of our most up to date, reputable currency
+        information and offer you secure, reliable, easy to use products and
+        services dedicated to making your life easier.
+      </h3>
+      <section className='section-1'>
+        <h4>Why DCI Converter is the best solution?</h4>
+        <p className='paragraph-section'>
+          Attention all international travelers and business owners! Are you
+          tired of constantly worrying about currency exchange rates while
+          traveling abroad or conducting business with international clients?
+          Look no further, because we have the solution for you! Introducing our
+          brand new currency converter, designed to make your life easier and
+          less stressful. With just a few clicks, you can easily convert any
+          currency to another, ensuring that you always know the most accurate
+          exchange rates. Our user-friendly platform offers instant conversions
+          and is updated regularly, so you can rest assured that you're getting
+          the latest and most accurate information. Whether you're paying for a
+          hotel room in Paris or sending money to a supplier in China, our
+          currency converter has got you covered. Don't let currency exchange be
+          a headache for you anymore. Try our currency converter today and see
+          the difference it can make in your international transactions.
+        </p>
+      </section>
     </>
   );
 };
